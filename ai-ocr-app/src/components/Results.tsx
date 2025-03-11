@@ -142,12 +142,12 @@ export const Results = ({ file, data, isLoading, onExport }: ResultsProps) => {
 
             {/* 合計金額 */}
             <div className="flex justify-between items-center bg-gray-50 p-3 rounded border border-gray-200">
-              <div>
-                <div className="text-xs text-gray-500">合計金額</div>
-                <div className="text-base font-bold">
-                  {data.totalAmount ? `¥${data.totalAmount.toLocaleString()}` : "不明"}
-                </div>
+              <div className="text-xs text-gray-500">合計金額</div>
+              <div className="text-base font-bold">
+                {data.totalAmount ? `¥${data.totalAmount.toLocaleString()}` : "不明"}
               </div>
+            </div>
+            <div className="flex justify-center">
               <Button onClick={onExport} size="sm" className="font-medium">
                 <Download className="h-4 w-4 mr-1" />
                 Excelで保存

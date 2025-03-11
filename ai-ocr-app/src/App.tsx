@@ -102,12 +102,14 @@ const App = () => {
 
             {isLoading && (
               <div className="mt-4 bg-white p-4 rounded-lg border shadow-sm">
-                <div className="flex justify-between mb-2 text-sm text-gray-700">
+                <div className="flex justify-center mb-2 text-sm text-gray-700">
                   <span>処理中...</span>
                   <span>{progress}%</span>
                 </div>
                 <Progress value={progress} className="h-2" />
-                <p className="text-xs text-gray-500 mt-2">AIが発注書の情報を分析しています</p>
+                <p className="text-xs text-gray-500 mt-2 text-center">
+                  AIが発注書の情報を分析しています
+                </p>
               </div>
             )}
           </div>

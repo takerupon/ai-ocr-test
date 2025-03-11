@@ -132,7 +132,7 @@ export const FileUpload = ({ onFileUpload, isLoading }: FileUploadProps) => {
         </div>
 
         {selectedFile && (
-          <div className="mt-3 bg-gray-50 p-2 rounded border border-gray-200 flex items-center justify-between">
+          <div className="mt-4 bg-gray-50 p-2 rounded border border-gray-200 flex items-center justify-center">
             <div className="flex items-center space-x-2">
               <FileText className="h-4 w-4 text-gray-500" />
               <span className="truncate max-w-[200px] text-sm text-gray-700">
@@ -157,8 +157,8 @@ export const FileUpload = ({ onFileUpload, isLoading }: FileUploadProps) => {
         )}
 
         {selectedFile && (
-          <div className="mt-3 flex justify-end">
-            <Button onClick={handleUpload} disabled={isLoading} size="sm" className="font-medium">
+          <div className="mt-4 flex justify-center">
+            <Button onClick={handleUpload} disabled={isLoading} size="lg" className="font-medium">
               {isLoading ? (
                 <div className="flex items-center gap-1">
                   <svg
